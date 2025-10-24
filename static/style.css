@@ -1,0 +1,221 @@
+body {
+  font-family: 'Georgia', serif;
+  margin: 0;
+  background-color: #fff;
+  color: #222;
+}
+
+
+/* Navbar */
+.navbar {
+  background-color: #8b0000;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.navbar h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end; /* ensure items stay on the right */
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Main layout */
+.content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 30px;
+  gap: 40px;
+}
+
+.photo-section img {
+  width: 120px;      /* or max-width: 120px */
+  height: auto;
+  border-radius: 5px;
+}
+
+.bio-links ul {
+  list-style: none;
+  padding: 0;
+}
+.bio-links li {
+  margin-bottom: 10px;
+}
+.bio-links a {
+  color: #8b0000;
+  text-decoration: none;
+}
+.bio-links a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 30px 0 0 0;
+  border-top: 1px solid #ddd;
+}
+.footer-top h2 {
+  margin: 0;
+}
+.footer-top p {
+  margin: 5px 0;
+}
+.cmu {
+  color: #8b0000;
+  font-weight: bold;
+}
+.socials {
+  margin-top: 10px;
+}
+.socials a {
+  color: #444;
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+/* Footer bottom */
+.footer-bottom {
+  background-color: #bfbfbf;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 14px;
+  text-align: left;
+}
+.footer-bottom a {
+  color: #8b0000;
+  text-decoration: none;
+}
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+
+
+/* ---------- Teaching page ---------- */
+
+/* Highlight current nav item */
+.nav-links a.active { text-decoration: underline; }
+
+/* Hero banner with big title overlay */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 260px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.hero-teaching {
+  background: url('static/image/teaching-hero.jpg') center/cover no-repeat;
+}
+
+/* dark overlay + large white title */
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.35);
+  display: grid;
+  place-items: center;
+}
+.hero-overlay h2 {
+  color: #fff;
+  font-size: 64px;
+  line-height: 1;
+  margin: 0;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  font-weight: 700;
+}
+
+/* Centered intro paragraph in CMU red */
+.teaching-intro {
+  max-width: 760px;
+  margin: 28px auto 12px;
+  text-align: center;
+  padding: 0 16px;
+}
+.teaching-intro p {
+  color: #8b0000;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* thin gray line like the screenshot */
+.section-divider {
+  border: none;
+  height: 1px;
+  background: #e5e5e5;
+  margin: 22px auto 28px;
+  width: 92%;
+}
+
+/* Course list container */
+.course-list {
+  max-width: 760px;
+  margin: 0 auto 60px;
+  padding: 0 16px;
+}
+
+/* Individual course card */
+.course-card {
+  border: 2px solid transparent;   /* shows blue outline when you edit, but default transparent */
+  padding: 18px 22px;
+  border-radius: 4px;
+}
+.course-card h3 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.course-card h3 a {
+  color: #8b0000;
+  text-decoration: underline;
+}
+.course-card p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+.course-card .course-desc {
+  color: #333;
+}
+
+/* subtle spacers between courses */
+.course-divider {
+  border: none;
+  height: 1px;
+  background: #e9e9e9;
+  margin: 36px 0;
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 640px) {
+  .hero { height: 200px; }
+  .hero-overlay h2 { font-size: 44px; }
+  .teaching-intro p { font-size: 16px; }
+}
