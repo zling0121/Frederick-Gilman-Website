@@ -252,3 +252,27 @@ footer {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
+/* Intro typography (index page) */
+.bio-intro {
+  max-width: 520px;
+}
+
+.intro-name {
+  font-size: 42px;
+  font-weight: 500;
+  margin: 0;
+  color: #555;
+}
+
+.intro-title {
+  font-size: 22px;
+  margin: 14px 0 28px;
+  color: #555;
+}
+
+.intro-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #222;
+}
