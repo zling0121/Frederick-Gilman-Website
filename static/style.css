@@ -276,3 +276,22 @@ footer {
   line-height: 1.7;
   color: #222;
 }
+
+/* CMU section list (hub page) */
+.cmu-sections {
+  margin-top: 30px;
+  border-top: 1px solid #ccc;
+}
+
+.cmu-row {
+  display: block;
+  padding: 22px 6px;
+  font-size: 22px;
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.cmu-row:hover {
+  background-color: #f6f6f6;
+}
