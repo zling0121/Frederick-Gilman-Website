@@ -4,146 +4,162 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Teaching — Dr. Frederick Gilman</title>
+
+  <!-- Main site styles -->
   <link rel="stylesheet" href="../static/style.css" />
+
+  <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
-  <!-- Top nav (reuses your existing styles) -->
-  <header>
-    <nav class="navbar">
-      <h1>Dr. Frederick Gilman</h1>
-      <ul class="nav-links">
-        <li><a href="../index.html">Bio</a></li>
-        <li><a class="active" href="teaching.html">Teaching</a></li>
-        <li><a href="writing.html">Writing</a></li>
-        <li><a href="interviewAndMedia.html">Interviews & Media</a></li>
-        <li><a href="officeHour.html">Office Hours</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- ================= NAVBAR ================= -->
+<header>
+  <nav class="navbar">
+    <h1>Dr. Frederick Gilman</h1>
 
-  <!-- Hero banner -->
-  <section class="hero hero-teaching">
-    <div class="hero-overlay">
-      <h2>Teaching</h2>
+    <div class="nav-links">
+
+      <!-- Bio dropdown -->
+      <div class="dropdown">
+        <a href="../index.html">Bio ▾</a>
+        <div class="dropdown-menu">
+          <a href="../index.html">Introduction</a>
+          <a href="bio/family history.html">Family History / Heritage</a>
+          <a href="bio/early history.html">Early History</a>
+          <a href="bio/michigan state.html">Michigan State – Undergraduate</a>
+          <a href="bio/princeton.html">Princeton – Graduate School</a>
+          <a href="bio/les houches.html">Les Houches, Summer 1965</a>
+          <a href="bio/caltech.html">Caltech</a>
+          <a href="bio/marriage.html">Marriage</a>
+          <a href="bio/stanford.html">Stanford</a>
+          <a href="bio/ssc.html">SSC</a>
+          <a href="bio/cmu.html">Carnegie Mellon – Buhl Professor</a>
+          <a href="bio/doe.html">DOE</a>
+          <a href="bio/us hep.html">US HEP & Astronomy</a>
+          <a href="bio/jewish community.html">Bay Area Jewish Community</a>
+          <a href="bio/china.html">China–US Cooperation in HEP</a>
+          <a href="bio/oist.html">OIST Board of Councilors</a>
+          <a href="bio/public talks.html">Public Talks & Activity</a>
+        </div>
+      </div>
+
+      <a class="active" href="teaching.html">Teaching</a>
+      <a href="writing.html">Writing</a>
+      <a href="interviewAndMedia.html">Interviews & Media</a>
+      <a href="officeHour.html">Office Hours</a>
+
     </div>
-  </section>
+  </nav>
+</header>
 
-  <!-- Intro text -->
-  <section class="teaching-intro">
-    <p>
-      I am teaching five courses this coming semester at Lorem University. Please
-      sign up for courses on the University website. If you have any specific
-      questions about course topics, feel free to message my office, and a teaching
-      staff member will respond as soon as possible.
+<!-- ================= HERO ================= -->
+<section class="hero hero-teaching">
+  <div class="hero-overlay">
+    <h2>Teaching</h2>
+  </div>
+</section>
+
+<!-- ================= INTRO ================= -->
+<section class="teaching-intro">
+  <p>
+    I am teaching five courses this coming semester. Please sign up for courses
+    through the university registration system. If you have any specific
+    questions about course topics, feel free to contact my office.
+  </p>
+</section>
+
+<hr class="section-divider">
+
+<!-- ================= COURSES ================= -->
+<main class="course-list">
+
+  <article class="course-card">
+    <h3>Physics For Engineering Students II</h3>
+    <p><strong>Semester:</strong> Spring<br>
+       <strong>Offered:</strong> 2023</p>
+    <p class="course-desc">
+      Include the official course description from your institution. Include any
+      other relevant information needed for students or others viewing to
+      understand major themes, prerequisites, or degree requirements.
     </p>
-  </section>
+  </article>
 
-  <hr class="section-divider">
+  <hr class="course-divider">
 
-  <!-- Courses list -->
-  <main class="course-list">
+  <article class="course-card">
+    <h3>Nuclear and Particle Physics II (The Standard Model)</h3>
+    <p><strong>Semester:</strong> Spring<br>
+       <strong>Offered:</strong> 2023</p>
+    <p class="course-desc">
+      Include the official course description from your institution. Include any
+      other relevant information needed for students or others viewing to
+      understand major themes, prerequisites, or degree requirements.
+    </p>
+  </article>
 
-    <article class="course-card">
-      <h3><a href="#">221: Course Name</a></h3>
-      <p><strong>Semester:</strong> Spring<br>
-         <strong>Offered:</strong> 2023</p>
-      <p class="course-desc">
-        Include the official course description from your institution. Include any
-        other relevant information needed for students or others viewing to
-        understand major themes, prerequisites, or if classes are exclusive for
-        specific majors or degree tracks.
+  <hr class="course-divider">
+
+  <article class="course-card">
+    <h3>Intermediate Electricity and Magnetism I and II</h3>
+    <p><strong>Semester:</strong> Spring<br>
+       <strong>Offered:</strong> 2023</p>
+    <p class="course-desc">
+      Include the official course description from your institution. Include any
+      other relevant information needed for students or others viewing to
+      understand major themes, prerequisites, or degree requirements.
+    </p>
+  </article>
+
+  <hr class="course-divider">
+
+  <article class="course-card">
+    <h3>Energy and Environment (or non-majors)</h3>
+    <p><strong>Semester:</strong> Spring<br>
+       <strong>Offered:</strong> 2023</p>
+    <p class="course-desc">
+      Include the official course description from your institution. Include any
+      other relevant information needed for students or others viewing to
+      understand major themes, prerequisites, or degree requirements.
+    </p>
+  </article>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="footer-top">
+    <h2>Dr. Frederick Gilman</h2>
+    <p>Buhl Professor of Theoretical Physics</p>
+    <p class="cmu">Carnegie Mellon University</p>
+
+    <div class="socials">
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <p>
+        Office: 123-456-7890 Ext. 24<br>
+        Mobile: 123-456-7890<br>
+        <a href="mailto:email@email.com">email@email.com</a>
       </p>
-    </article>
-
-    <hr class="course-divider">
-
-    <article class="course-card">
-      <h3><a href="#">321: Course Name</a></h3>
-      <p><strong>Semester:</strong> Spring<br>
-         <strong>Offered:</strong> 2023</p>
-      <p class="course-desc">
-        Include the official course description from your institution. Include any
-        other relevant information needed for students or others viewing to
-        understand major themes, prerequisites, or if classes are exclusive for
-        specific majors or degree tracks.
-      </p>
-    </article>
-
-    <hr class="course-divider">
-
-    <article class="course-card">
-      <h3><a href="#">421: Course Name</a></h3>
-      <p><strong>Semester:</strong> Spring<br>
-         <strong>Offered:</strong> 2023</p>
-      <p class="course-desc">
-        Include the official course description from your institution. Include any
-        other relevant information needed for students or others viewing to
-        understand major themes, prerequisites, or if classes are exclusive for
-        specific majors or degree tracks.
-      </p>
-    </article>
-
-    <hr class="course-divider">
-
-    <article class="course-card">
-      <h3><a href="#">521: Course Name</a></h3>
-      <p><strong>Semester:</strong> Spring<br>
-         <strong>Offered:</strong> 2023</p>
-      <p class="course-desc">
-        Include the official course description from your institution. Include any
-        other relevant information needed for students or others viewing to
-        understand major themes, prerequisites, or if classes are exclusive for
-        specific majors or degree tracks.
-      </p>
-    </article>
-
-    <hr class="course-divider">
-
-    <article class="course-card">
-      <h3><a href="#">621: Course Name</a></h3>
-      <p><strong>Semester:</strong> Spring<br>
-         <strong>Offered:</strong> 2023</p>
-      <p class="course-desc">
-        Include the official course description from your institution. Include any
-        other relevant information needed for students or others viewing to
-        understand major themes, prerequisites, or if classes are exclusive for
-        specific majors or degree tracks.
-      </p>
-    </article>
-
-  </main>
-
-  <!-- Footer (reuses your existing footer styles) -->
-  <footer>
-    <div class="footer-top">
-      <h2>Dr. Frederick Gilman</h2>
-      <p>Buhl Professor of Theoretical Physics</p>
-      <p class="cmu">Carnegie Mellon University</p>
-      <div class="socials">
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-linkedin"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-      </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="footer-left">
-        <p>Office: 123-456-7890 Ext. 24<br>
-           Mobile: 123-456-7890<br>
-           <a href="mailto:email@email.com">email@email.com</a></p>
-      </div>
-
-      <div class="footer-right">
-        <p>For speaking requests and inquiries, please contact:<br>
-           Name Here<br>
-           Phone: +1-234-567-8910<br>
-           <a href="mailto:email@email.com">email@email.com</a></p>
-      </div>
+    <div class="footer-right">
+      <p>
+        For speaking requests and inquiries, please contact:<br>
+        Name Here<br>
+        Phone: +1-234-567-8910<br>
+        <a href="mailto:email@email.com">email@email.com</a>
+      </p>
     </div>
-  </footer>
+  </div>
+</footer>
 
 </body>
 </html>
